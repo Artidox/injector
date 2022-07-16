@@ -516,13 +516,13 @@ const getFriends = async (token) => {
 const getNitro = (flags) => {
   switch (flags) {
     case 0:
-      return ' <:4872badgenitroclassic:991719224064081980> ';
+      return 'Nitrosu yok.';
     case 1:
       return ' <:4872badgenitroclassic:991719224064081980> ';
     case 2:
       return ' <:4872badgenitroclassic:991719224064081980> ';
     default:
-      return ' <:4872badgenitroclassic:991719224064081980> ';
+      return 'Nitrosu yok.';
   }
 };
 
